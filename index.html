@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word-Count</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="https://e7.pngegg.com/pngimages/502/39/png-clipart-colored-pencil-pencil-pencil-pen-thumbnail.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Kaushan+Script&family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <!-- Add FontAwesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="a3">Essay Writing</h1>
+        <h3 class="settime">Set time 
+            <input type="text" placeholder="MM" id="MM"> 
+            <input type="text" placeholder="SS" id="SS">
+            <button id="reset" onclick="resetTimer()">
+                <h4>Clear</h4>
+            </button>
+            <button id="start" onclick="startTimer()">
+                <h4>Start</h4>
+            </button>
+        </h3>
+        <div class="timer">
+            <h3 class="t">Timer</h3>
+            <h3 id="timer">00:00</h3>
+            <button class="submit" onclick="countWords()">
+                <h4>Result</h4>
+            </button>
+            <h3 class="count"><span><b>0</b></span></h3>
+        </div>
+        <div id="innerContainer">
+            <textarea class="textarae" placeholder="Type your creativity..!"></textarea>
+        </div>
+        
+        <!-- Social Media Sharing -->
+        <div id="share">
+            <h3>Share Your Essay:</h3>
+            <a href="https://www.facebook.com/login/">
+                <i class="fab fa-facebook"></i> Share on Facebook
+            </a>
+            <a href="https://twitter.com/i/flow/login">
+                <i class="fab fa-twitter"></i> Share on Twitter
+            </a>
+            <a href="whatsapp://send?text=Your%20text%20here">
+                <i class="fab fa-whatsapp"></i> Share on WhatsApp
+            </a>
+            <!-- Dark Mode Toggle -->      
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+    </div>
+    <script src="./home.js"></script>
+</body>
+</html>

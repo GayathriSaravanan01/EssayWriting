@@ -1,0 +1,162 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("homeimage.jpg") no-repeat fixed;
+    background-size: cover;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#container {
+    margin: auto;
+    background-color: rgba(226, 214, 216, 0.712);
+    margin-top: 1em;
+    width: 70%;
+    height: 690px;
+    box-shadow: 0 0 5px 2px rgba(92, 69, 84, 0.644);
+    border-radius: 10px;
+}
+
+#a3 {
+    text-align: center;
+    background: linear-gradient(to left, rgb(250, 119, 250), blue, yellow, rgb(249, 170, 25));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.settime {
+    font-size: 100%;
+    margin-left: 1%;
+}
+
+input {
+    text-align: center;
+    width: 8%;
+    height: 25px;
+    border-radius: 4px;
+    margin-left: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 192, 203, 0.712);
+    box-shadow: 0px 0px 2px 1px rgb(224, 80, 176, 0.336);
+}
+
+#start,
+#reset,
+.submit,
+.count {
+    float: right;
+    margin-right: 50px;
+    width: 10%;
+    height: 33px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Kaushan Script', cursive;
+}
+#start,
+#reset,
+.submit
+{
+    background-color: rgb(255, 59, 59);  
+}
+.submit,.count
+{
+    margin-top: -20px;
+}
+
+#start:hover,
+#reset:hover,
+.submit:hover {
+    background-color: rgb(255, 188, 62);
+}
+
+.timer {
+    
+    width: 93%;
+    padding: 1%;
+    margin-left: 1%;
+    /* display: flex;
+    flex-direction: row;
+    text-align: center; */
+}
+
+/* .t, */
+#timer {
+    width: 10%;
+    margin-top: -20px;
+    text-align: center;
+    margin-left: 5%;
+    font-size: 100%;
+}
+
+/* .submit, */
+.count {
+    float: right;
+    width: 10%;
+    height: 33px;
+    font-size: 22px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: auto;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.submit:hover {
+    background-color: rgb(247, 253, 121);
+}
+
+.textarae {
+    margin-top: 10px;
+    color: black;
+    width: 96%;
+    height: 505px;
+    margin-left: 2%;
+    font-size: 18px;
+    outline: none;
+    resize: none;
+    background: rgba(225, 255, 255, 1);
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode {
+    /* background-color: #222; */
+    color: #fff;
+    background-color: plum;
+}
+#share
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-image: url("homeimage.jpg");
+    }
+    #container {
+        margin-top: 5%;
+        width: 94%;
+        height: 630px;
+    }
+    #timer
+    {
+        margin-left: 45px;
+    }
+    .textarae {
+        height: 495px;
+    }
+}
